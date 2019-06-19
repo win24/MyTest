@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/touch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text=""
+            android:textColor="@color/color_style1"
+            android:textSize="15px"
+            android:id="@+id/tv_channel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--2*2画面-->
+        <android.support.constraint.ConstraintLayout
+            android:visibility="gone"
+            android:id="@+id/cl_type4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@id/view_landscape1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@id/view_portrait1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view_landscape1"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@id/view_portrait1"
+                app:layout_constraintTop_toTopOf="@id/view_landscape1"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:id="@+id/view_landscape1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/color_style2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                tools:ignore="MissingConstraints">
+            </View>
+
+            <View
+                android:background="@color/color_style2"
+                android:id="@+id/view_portrait1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+            </View>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- 2*3画面-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_type6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@id/view_landscape21"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@id/view_portrait21"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@+id/view_portrait22"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view_landscape21"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@id/view_portrait21"
+                app:layout_constraintTop_toTopOf="@id/view_landscape21"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                app:layout_constraintLeft_toLeftOf="@id/view_portrait22"
+                app:layout_constraintTop_toTopOf="@id/view_landscape21"
+                android:text=""
+                android:textColor="@color/color_style1"
+                android:textSize="15px"
+                android:id="@+id/tv_channel66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view_landscape21"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/color_style2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                tools:ignore="MissingConstraints">
+            </View>
+
+            <View
+                android:background="@color/color_style2"
+                android:id="@+id/view_portrait21"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/view_portrait22"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+            </View>
+
+            <View
+                android:background="@color/color_style2"
+                android:id="@+id/view_portrait22"
+                app:layout_constraintLeft_toRightOf="@+id/view_portrait21"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+            </View>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/back_system"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="80px"
+        app:layout_constraintLeft_toLeftOf="@id/surfaceview"
+        app:layout_constraintTop_toTopOf="@id/surfaceview"
+        android:src="@drawable/back_button_image_selecet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/float_button_image_selecet"
+        android:id="@+id/float_button"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        app:layout_constraintRight_toRightOf="@id/surfaceview"
+        app:layout_constraintBottom_toBottomOf="@id/surfaceview"
+        android:layout_width="80px"
+        android:layout_height="80px"/>
+
+
+</android.support.constraint.ConstraintLayout>
